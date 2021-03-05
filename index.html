@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Tax calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+  <div class="container-fluid text-center">
+    <h1 class="text-warning text-center">Tax calculator</h1>
+  </div>
+  <body>
+  	<form id="form">
+      <div class="form-group">
+        <label for="maritalstatus"> Marital Status : </label>
+             <select id = "Marital_status">
+               <option value = "married">Married</option>
+               <option value = "single">Unmarried</option>
+             </select>
+        </div>
+        <div class="form-group">
+          <label for="income"> Monthly Income : </label>
+          <input type="text" class="form-control" id="monthly_income" placeholder="Enter Your Monthly Income" >
+        </div>
+        <div class="form-group">
+          <button type="button" class="btn btn-success" onclick= taxcalFunction()>Calculate tax</button>
+          <button type="reset" class="btn btn-light" onclick="resetFunction()">Reset</button>
+        </div>
+          <div class="row">
+          <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body" style="max-width: 35rem;">
+              <h6 class="card-title">Annual Salary </h6>
+              <p id="Annualsalary"></p>
+            </div>
+          </div>
+        </div>
+         <div class="col-sm-3">
+          <div class="card" style="max-width: 35rem;">
+            <div class="card-body">
+              <h6 class="card-title">Annual payable Tax</h6>
+              <p id="Annual_tax"></p>
+            </div>
+          </div>
+        </div>
+         <div class="col-sm-3">
+          <div class="card" style="max-width: 35rem;">
+            <div class="card-body">
+              <h6 class="card-title">Monthly payable Tax</h6>
+              <p id="Monthly_tax"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card" style="max-width: 35rem;">
+            <div class="card-body">
+              <h6 class="card-title">Cash In Hand [Annual] </h6>
+              <p id="Cash_in_hand"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+
+
+

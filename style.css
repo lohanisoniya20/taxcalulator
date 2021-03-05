@@ -1,0 +1,10 @@
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 1000px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
