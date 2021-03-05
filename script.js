@@ -4,7 +4,7 @@ document.getElementById("form").reset();
 document.getElementById("Annualsalary").innerHTML = 0.00;
 document.getElementById("Annual_tax").innerHTML = 0.00;
 document.getElementById("Monthly_tax").innerHTML = 0.00;
-document.getElementById("Tax_in_hand").innerHTML = 0.00;
+document.getElementById("Cash_in_hand").innerHTML = 0.00;
 }
   ////tax cal function
   function taxcalFunction() {
